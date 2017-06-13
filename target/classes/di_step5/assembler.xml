@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+	       
+
+<bean id="db" name="db" class="di_step5.MsSql"/>
+
+<bean id="assem" class="di_step5.Assembler">
+<constructor-arg ref="db"/><!-- 생성자의 매개변수가 db다. (Assembler의 생성자의 매개변수가 db) -->
+
+</bean>   
+
+</beans>

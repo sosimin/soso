@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans.xsd
+	   http://www.springframework.org/schema/mvc
+	   http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+	   
+	   
+	   <mvc:annotation-driven/>
+	   
+	   <mvc:default-servlet-handler/>
+	   
+	   <!-- 결과물을 표시해주는 페이지의 경로 -->
+	   <mvc:view-resolvers><!--  처리 된 결과를 전달 (현재 begin경로에 전달함.)  -->
+	   	<mvc:jsp prefix="/begin/"/>
+	   </mvc:view-resolvers>
+	   
+	   
+	   </beans>
